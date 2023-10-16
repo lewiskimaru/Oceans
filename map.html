@@ -72,6 +72,11 @@
    
     <!-- Add the following div for the globe -->
     <div id="earth_div" style="position: absolute; top: 6px; width: 100vw; height: calc(100vh - 100px);"></div>
+    
+    <!-- Add the slider at the bottom right corner -->
+    <div style="position: absolute; bottom: 20px; right: 20px; z-index: 9999;">
+        <input type="range" id="zoomSlider" min="0" max="16" step="0.1" value="2">
+    </div>
 
     <script src="https://www.webglearth.com/v2/api.js"></script>
 
@@ -111,6 +116,12 @@
 
         earth.on('dblclick', function (e) {
             earth.setZoom(earth.getZoom() + 1);
+        });
+        // Add zoom functionality using the slider
+        var zoomSlider = document.getElementById('zoomSlider');
+        zoomSlider.addEventListener('input', function (e) {
+            var newZoomValue = parseFloat(e.target.value);
+            earth.setZoom(newZoomValue);
         });
     </script>
 </body>
