@@ -22,21 +22,5 @@
 
 Lewis Kamau Kimaru
 
-Emmanuel Magero
-
-Samuel Kalya
-
-Stanely Ngindo
-
-Elly Kimutai
-
 # Technologies applied
 Computer Vision
-
-Sonar - LIDAR
-
-Embeded systems - Raspberry pi
-
-Solar Energy
-
-Satellite communication
